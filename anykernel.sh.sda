@@ -186,12 +186,12 @@ dump_boot;
 
 #fstab.qcom
 backup_file fstab.qcom;
-replace_string fstab.qcom "not2_match" "mmcblk1p2" "platform/msm_sdcc.1/by-name/system";
-replace_string fstab.qcom "not2_match" "mmcblk1p3" "platform/msm_sdcc.1/by-name/userdata";
-replace_string fstab.qcom "not2_Match" "mmcblk1p4" "platform/msm_sdcc.1/by-name/cache";
-replace_string fstab.qcom "not2_match" "sda2" "platform/msm_sdcc.1/by-name/system"
-replace_string fstab.qcom "not2_match" "sda3" "platform/msm_sdcc.1/by-name/userdata"
-replace_string fstab.qcom "not2_match" "sda4" "platform/msm_sdcc.1/by-name/cache"
+replace_string fstab.qcom "not2_match" "platform/msm_sdcc.1/by-name/system" "sda2";
+replace_string fstab.qcom "not2_match" "platform/msm_sdcc.1/by-name/userdata" "sda3";
+replace_string fstab.qcom "not2_match" "platform/msm_sdcc.1/by-name/cache" "sda4";
+replace_string fstab.qcom "not2_match" "mmcblk1p2" "sda2";
+replace_string fstab.qcom "not2_match" "mmcblk1p3" "sda3";
+replace_string fstab.qcom "not2_match" "mmcblk1p4" "sda4";
 
 # end ramdisk changes
 

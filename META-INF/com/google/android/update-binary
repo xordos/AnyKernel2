@@ -27,6 +27,7 @@ abort() { ui_print "$*"; exit 1; }
 
 show_progress 1.34 4;
 ui_print " ";
+rm -fr /tmp/anykernel;
 mkdir -p /tmp/anykernel;
 cd /tmp/anykernel;
 unzip -o "$ZIP";
