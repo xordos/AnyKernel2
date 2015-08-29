@@ -61,3 +61,14 @@ Not required, but any tweaks you can't hardcode into the source should be added 
 
 Have fun!
 
+
+==================
+Usage for MT2L03 to gen boot image for booting from sdcard and otg (sda):
+
+cp anykernel.sh.mmcblk1p anykernel.sh
+zip -r9 UPDATE-AnyKernel2_mmcblk1p.zip * -x README *.zip
+cp anykernel.sh.sda anykernel.sh
+zip -r9 UPDATE-AnyKernel2_sda.zip * -x README *.zip
+cp anykernel.sh.stock anykernel.sh
+zip -r9 UPDATE-AnyKernel2_stock.zip * -x README *.zip
+
